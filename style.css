@@ -1,0 +1,292 @@
+@import url(./color.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, p {
+    color: #787976;
+    font: 400 1rem / 1.5625rem "Open Sans", sans-serif;
+}
+html{
+    font-size: 16px;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav{
+    height: 8vh;
+    background-color: rgb(8, 67, 67);
+    display: flex;
+    gap: 30rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.homepage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2rem;;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://www.free-css.com/assets/files/free-css-templates/preview/page259/aria/assets/images/header-background.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.homepage >h1{
+    font-size: 60px;
+    font-weight: 700px;
+    color: white;
+}
+
+.homepage >p{
+ font-family: Montserrat;
+ font-weight: 700px;
+ color: white;
+ font-size: 1.10rem;
+}
+.homepage>button{
+    background-color: rgb(9, 233, 158);
+    color: white;
+    padding: 15px 25px;
+    font-size: 21px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.right-nav>ul>li>i{
+    background-color: #13BF98;
+    color: #fff;
+    padding: 0.5rem;
+}
+.right-nav>ul>li>i:hover{
+    background-color: #fff;
+    color: #13BF98;
+}
+.right-nav{
+    display: flex;
+    gap: 80px;
+}
+
+.right-nav>ul{
+    color: white;
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.right-nav ul li:hover {
+    color: #13BF98;
+}
+.right-nav ul li a:hover {
+    color: #13BF98;
+}
+a{
+    text-decoration: none; 
+    color: white;
+}
+.Intro{
+    height: 98vh;
+}
+.section-title{
+   color: #13BF98;
+}
+.Intro-container-left>h2{
+    
+    color: black;
+    font-family: Montserrat sans-serif;
+    font-weight: 700;
+}
+span{
+    color: black;
+}
+.Intro-container{
+    display: flex;
+    /* margin-top: 10%; */
+    padding: 5rem 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    
+}
+
+.Intro-container-left{
+margin-left: 10rem;
+ 
+}
+.Intro-container-right{
+    flex: 1;
+    
+
+}
+.intro-img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+.Intro-container .Intro-container-right .intro-img img{
+    height: 50%;
+    width: 60%;
+    background-position: center;
+
+}
+.Intro-container .Intro-container-right img:hover{
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+
+}
+
+.intro-cards{
+    display: flex;
+    justify-content:center;
+    gap: 8rem;
+}
+.intro-card-icon{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: start;
+
+}
+.intro-card-icon>i{
+    padding: 2rem;
+   font-size: 2rem;
+   background-color: #13BF98;
+   color: #fff;
+  
+}
+.intro-card-content{
+    display: flex;
+    justify-content: center;
+}
+.intro-card-content-p{
+    display: flex;
+    justify-content: center;
+}
+/* . */
+
+.Services-content>span{
+    color: #13BF98;
+}
+.Services-content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+ 
+   
+}
+h2 {
+    color: #484a46;
+    font: 700 1.75rem / 2.125rem "Montserrat", sans-serif;
+}
+.Services-cards{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    gap: 4rem;
+   
+}
+.Services-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+.Services-card-text>h1{
+    text-align: center;
+    color: black;
+}
+.Services-card{
+  
+    height: 30rem;
+    width: 20rem;
+    border-radius: 8px;
+    border: 1px solid rgb(218, 214, 214);
+    box-shadow: #787976;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Services-card>img{
+    height: 30%;
+    width: 100%;
+    border-radius: 8px;
+}
+.Services-card ul li{
+    list-style: square;
+    
+    
+}
+.Services-card ul li::marker {
+    
+    color: green;
+}
+
+.Services-card-text>button{
+    background-color: rgb(9, 233, 158);
+    color: white;
+    padding: 10px 15px;
+    font-size: 21px;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    transform: translateY(4.50rem);
+
+}
+.Services-card-text>span>strong{
+    color: #13BF98;
+}
+.Services-card-text>span{
+    color: #070707;
+    font-weight: bold;
+}
+.Details-section1{
+    margin-top: 5rem;
+    display: flex;
+    gap: 5rem;
+
+}
+.Details-section1-img{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.Details-section2-img> img{
+    height: 35rem;
+    width: 55rem;
+   text-align: end;
+}
+.Details-section1-img>img{
+    height: 35rem;
+    width: 55rem;
+}
+.Details-section1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.Details-section2{
+ margin-top: -0.44rem;
+    display: flex;
+}
+
+
+.Testimonials-header{
+    text-align: center;
+    margin-top: 4rem;
+}
